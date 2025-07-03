@@ -1,4 +1,4 @@
-from fedora 
-run yum install iputils -y
-env hostname=google.com
-cmd ["ping","-c","$hostname"]
+FROM fedora 
+RUN yum install iputils -y
+ENV hostname=google.com
+CMD ["ping","-c","$hostname"]
